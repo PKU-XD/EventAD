@@ -26,7 +26,7 @@ def read_h5_file(file_path):
         print_h5_info(h5_file)
 
 if __name__ == "__main__":
-    # h5_file_path = "/home/handsomexd/EventAD/data/detector/ROL/test/thun_01_a/events/left/events_2x.h5"  # 替换为你的h5文件路径
+    # h5_file_path = "/home/handsomexd/EventAD/data/detector/ROL/test/thun_01_a/events/left/events_2x.h5"  
     h5_file_path = "/home/handsomexd/EventAD/data/detector/ROL/val/31_M/events/left/events_2x.h5" # x.max 319 y.max 239 
     # h5_file_path = "/home/handsomexd/EventAD/data/detector/zurich_city_13_b/events/left/events_2x.h5"
     read_h5_file(h5_file_path)

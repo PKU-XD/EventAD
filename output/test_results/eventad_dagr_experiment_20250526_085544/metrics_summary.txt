@@ -1,0 +1,13 @@
+实验: eventad_dagr_experiment
+数据集: /home/handsomexd/EventAD/data/detector/ROL
+检查点: best_rol.pth
+
+主要指标:
+AUC: 0.8822
+AP: 0.5736
+AUC-Frame: N/A
+mTTA: 2.9201
+mRESPONSE: 1.2017
+
+FPS测量:
+FPS: 595.48 

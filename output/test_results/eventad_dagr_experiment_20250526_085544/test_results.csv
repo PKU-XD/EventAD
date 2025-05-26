@@ -1,0 +1,11 @@
+Experiment,eventad_dagr_experiment
+Dataset,/home/handsomexd/EventAD/data/detector/ROL
+Model Parameters,"x_dim: 64, h_dim: 256"
+Checkpoint,./checkpoints/detector/best_rol.pth
+Epoch,24
+FPS (帧/秒),595.48
+AUC,0.8822
+AP,0.5736
+AUC-Frame,0.7481
+mTTA,2.9201
+mRESPONSE,1.2017

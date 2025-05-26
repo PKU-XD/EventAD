@@ -17,20 +17,20 @@ def parse_eventad_args():
     # ===== Original DAGR parameters =====
     # Base path parameters
     parser.add_argument('--dataset_directory', type=Path, help="Path to the directory containing the dataset.",
-                        default="/home/handsomexd/EventAD/data/detector/ROL")
-    parser.add_argument('--output_directory', type=Path, default="/home/handsomexd/EventAD/log", 
+                        default="./data/detector/ROL")
+    parser.add_argument('--output_directory', type=Path, default="./log", 
                         help="Path to the logging directory.")
-    parser.add_argument("--checkpoint", type=Path, default="/home/handsomexd/EventAD/checkpoints/detector/dagr_s_50.pth", 
+    parser.add_argument("--checkpoint", type=Path, default="./checkpoints/detector/dagr_s_50.pth", 
                         help="Path to the directory containing the checkpoint.")
     parser.add_argument("--img_net", default="resnet50", type=str)
     parser.add_argument("--img_net_checkpoint", type=Path, default=argparse.SUPPRESS)
 
     # Configuration file parameters
-    parser.add_argument("--config", type=Path, default="/home/handsomexd/EventAD/config/dagr-s-dsec.yaml")
+    parser.add_argument("--config", type=Path, default="./config/dagr-s-dsec.yaml")
     parser.add_argument("--use_image", default=True, action="store_true")
     parser.add_argument("--no_events", action="store_true")
     parser.add_argument("--keep_temporal_ordering", action="store_true")
-    parser.add_argument("--split", default="/home/handsomexd/EventAD/config/rol_split.yaml", help="split dataset for rol")
+    parser.add_argument("--split", default="./config/rol_split.yaml", help="split dataset for rol")
 
     # Task parameters
     parser.add_argument("--task", default=argparse.SUPPRESS, type=str)
