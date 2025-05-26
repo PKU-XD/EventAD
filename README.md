@@ -168,7 +168,7 @@ Get the distinction between the training set and the validation set of the data 
 ```bash
 python scripts/generate_yaml.py
 ```
-Set the dataset path in the `eventad_config.py` parameter `--dataset_directory` './data/detector/ROL'
+Set the dataset path in the `eventad_config.py` parameter `--dataset_directory` `'./data/detector/ROL'`
 
 ## Training
 First you need to download the dagr model file from [dagr](https://download.ifi.uzh.ch/rpg/dagr/data/dagr_s_50.pth) and put it in the `./checkpoints/detector/dagr_s_50.pth` folder. Modify the `--checkpoint` in `eventad_config.py` to the path of the dagr model. Then, run the following command to train the model:
